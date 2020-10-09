@@ -9,25 +9,25 @@ describe('App.vue', () => {
     wrapper.vm.add('5');
     expect(wrapper.vm.runningTotal).to.equal(9)
   })
-  it('subtract four from seven changes running total', () => {
+  it('can subtract four from seven to change the running total', () => {
     const wrapper = shallowMount(App)
     wrapper.vm.previousTotal = 7
     wrapper.vm.subtract('4');
     expect(wrapper.vm.runningTotal).to.equal(3)
   })
-  it('multiply three by five changes running total', () => {
+  it('can multiply three by five to change the running total', () => {
     const wrapper = shallowMount(App)
     wrapper.vm.previousTotal = 3
     wrapper.vm.multiply('5');
     expect(wrapper.vm.runningTotal).to.equal(15)
   })
-  it('divide 21 by seven changes running total', () => {
+  it('can divide 21 by seven to change the running total', () => {
     const wrapper = shallowMount(App)
     wrapper.vm.previousTotal = 21
     wrapper.vm.divide('7');
     expect(wrapper.vm.runningTotal).to.equal(3)
   })
-  it('concatenate multiple number button click', () => {
+  it('can concatenate multiple numbers button click', () => {
     const wrapper = shallowMount(App)
     wrapper.vm.numberClick('1');
     wrapper.vm.numberClick('2');
